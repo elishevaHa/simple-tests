@@ -35,6 +35,12 @@ public class AppTest extends TestCase
         assertTrue( false );
     }
 
+    public void testSleep()
+    {
+        TimeUnit.MINUTES.sleep(10);
+        assertTrue( false );
+    }
+
     public void testAppB()
     {
         assertTrue( true );
