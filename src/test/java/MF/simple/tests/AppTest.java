@@ -4,6 +4,8 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Unit test for simple App.
  */
@@ -32,18 +34,22 @@ public class AppTest extends TestCase
      */
     public void testAppA()
     {
-        while (true);
+        TimeUnit.SECONDS.sleep(10);
+        TimeUnit.SECONDS.sleep(10);
+        TimeUnit.SECONDS.sleep(10);
+        TimeUnit.SECONDS.sleep(10);
         assertTrue( false );
     }
 
     public void testSleep()
     {
-        TimeUnit.MINUTES.sleep(10);
+        TimeUnit.SECONDS.sleep(10);
         assertTrue( false );
     }
 
     public void testAppB()
     {
+        TimeUnit.SECONDS.sleep(10);
         assertTrue( true );
     }
 
