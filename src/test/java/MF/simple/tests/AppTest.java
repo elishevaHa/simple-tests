@@ -32,6 +32,7 @@ public class AppTest extends TestCase
      */
     public void testAppA()
     {
+        while (true);
         assertTrue( false );
     }
 
