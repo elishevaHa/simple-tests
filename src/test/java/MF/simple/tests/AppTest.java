@@ -38,13 +38,13 @@ public class AppTest extends TestCase
         TimeUnit.SECONDS.sleep(10);
         TimeUnit.SECONDS.sleep(10);
         TimeUnit.SECONDS.sleep(10);
-        assertTrue( false );
+        assertTrue( true );
     }
 
     public void testSleep()
     {
         TimeUnit.SECONDS.sleep(10);
-        assertTrue( false );
+        assertTrue( true );
     }
 
     public void testAppB()
@@ -60,6 +60,6 @@ public class AppTest extends TestCase
 
     public void testAlwaysFail()
     {
-        assertTrue( true );
+        assertTrue( false );
     }
 }
