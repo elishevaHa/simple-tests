@@ -9,57 +9,63 @@ import java.util.concurrent.TimeUnit;
 /**
  * Unit test for simple App.
  */
-public class AppTest extends TestCase
-{
+public class AppTest extends TestCase {
     /**
      * Create the test case
      *
      * @param testName name of the test case
      */
-    public AppTest( String testName )
-    {
-        super( testName );
+    public AppTest(String testName) {
+        super(testName);
     }
 
     /**
      * @return the suite of tests being tested
      */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
+    public static Test suite() {
+        return new TestSuite(AppTest.class);
     }
 
     /**
      * Rigourous Test :-)
      */
-    public void testAppA()
-    {
-        TimeUnit.SECONDS.sleep(10);
-        TimeUnit.SECONDS.sleep(10);
-        TimeUnit.SECONDS.sleep(10);
-        TimeUnit.SECONDS.sleep(10);
-        assertTrue( true );
+    public void testAppA() {
+        for (int i = 0; i < 10000000; i++) ;
+        for (int i = 0; i < 10000000; i++) ;
+        for (int i = 0; i < 10000000; i++) ;
+        for (int i = 0; i < 10000000; i++) ;
+        assertTrue(true);
     }
 
-    public void testSleep()
-    {
-        TimeUnit.SECONDS.sleep(10);
-        assertTrue( true );
+    public void testSleep() {
+        for (int i = 0; i < 10000000; i++) ;
+        for (int i = 0; i < 10000000; i++) ;
+        for (int i = 0; i < 10000000; i++) ;for (int i = 0; i < 1000000; i++) ;
+        for (int i = 0; i < 10000000; i++) ;
+        for (int i = 0; i < 10000000; i++) ;
+        for (int i = 0; i < 10000000; i++) ;
+        for (int i = 0; i < 10000000; i++) ;
+
+
+        assertTrue(true);
     }
 
-    public void testAppB()
-    {
-        TimeUnit.SECONDS.sleep(10);
-        assertTrue( true );
+    public void testAppB() {
+        for (int i = 0; i < 10000000; i++) ;
+        for (int i = 0; i < 10000000; i++) ;
+        for (int i = 0; i < 10000000; i++) ;
+        for (int i = 0; i < 10000000; i++) ;
+        for (int i = 0; i < 10000000; i++) ;
+        for (int i = 0; i < 10000000; i++) ;
+
+        assertTrue(true);
     }
 
-    public void testAppC()
-    {
-        assertTrue( true );
+    public void testAppC() {
+        assertTrue(true);
     }
 
-    public void testAlwaysFail()
-    {
-        assertTrue( false );
+    public void testAlwaysFail() {
+        assertTrue(false);
     }
 }
