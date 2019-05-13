@@ -30,33 +30,59 @@ public class AppTest extends TestCase {
      * Rigourous Test :-)
      */
     public void testAppA() {
-        for (int i = 0; i < 10000000; i++) ;
-        for (int i = 0; i < 10000000; i++) ;
-        for (int i = 0; i < 10000000; i++) ;
-        for (int i = 0; i < 10000000; i++) ;
+        try {
+            Thread.sleep(1000); // Sleep for one second
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+
         assertTrue(true);
     }
 
     public void testSleep() {
-        for (int i = 0; i < 10000000; i++) ;
-        for (int i = 0; i < 10000000; i++) ;
-        for (int i = 0; i < 10000000; i++) ;for (int i = 0; i < 1000000; i++) ;
-        for (int i = 0; i < 10000000; i++) ;
-        for (int i = 0; i < 10000000; i++) ;
-        for (int i = 0; i < 10000000; i++) ;
-        for (int i = 0; i < 10000000; i++) ;
+        try {
+            Thread.sleep(1000); // Sleep for one second
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
 
 
         assertTrue(true);
     }
 
     public void testAppB() {
-        for (int i = 0; i < 10000000; i++) ;
-        for (int i = 0; i < 10000000; i++) ;
-        for (int i = 0; i < 10000000; i++) ;
-        for (int i = 0; i < 10000000; i++) ;
-        for (int i = 0; i < 10000000; i++) ;
-        for (int i = 0; i < 10000000; i++) ;
+        try {
+            Thread.sleep(1000); // Sleep for one second
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+            Thread.sleep(1000);
+
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
 
         assertTrue(true);
     }
